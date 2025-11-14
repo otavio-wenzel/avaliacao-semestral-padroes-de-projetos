@@ -8,13 +8,13 @@ public class Main {
         var engine = new ReportEngine();
 
         var ctxDaily = new ReportContext.Builder()
-                .region("BR-SUL")
+                .region("BR-NORTE")
                 .build();
 
         var ctxWeekly = new ReportContext.Builder()
                 .start(Instant.now().minus(7, ChronoUnit.DAYS))
                 .end(Instant.now())
-                .region("BR-SP")
+                .region("BR-SUL")
                 .build();
 
         System.out.println("\n===== DIÁRIO =====");
